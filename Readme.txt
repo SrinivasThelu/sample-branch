@@ -1,32 +1,29 @@
 Git learninging
 
-- git status
+** Create A Local Git repository **
+    git init
+    git status
+    git commit -m "first commit"
+    git remote add origin origin git@github.com:servicestream/img-retrieval-ad-hoc.git
+    git push -u origin master
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
- - git add *
--  git status
-On branch master
-
-Initial commit
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-        new file:   Readme.txt
-
---git commit -m "first commit
- 1 file changed, 7 insertions(+)
- create mode 100644 Readme.txt
-
- -- git remote add master  git@github.com:SrinivasThelu/sample-branch.gitgit 
-
---  git push --set-upstream master master
- -- git branch issue1
+**Creating First Branch**
+    git branch issue1
     - create a branch in local repository
--- git checkout issue1
+    git checkout issue1
     - checking out for making changes
-    
-git commit -m "issue commit"
+    git commit -m "issue commit"
+    - commit to local branch
+    git push -u master issue1
+    - create a remote branch and commit
+
+**Merge Branch**
+    git checkout master
+    git merge issue1
+    git commit -m "merge"
+    git push
+
+** Cleaning up branch **
+    git remote origin --delete issue1
+    - git branch -d issue1
 
