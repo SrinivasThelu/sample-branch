@@ -1,11 +1,11 @@
 Git learninging
 
 **Create A Local Git repository**
-    1.git init
-    2.git status
-    3.git commit -m "first commit"
-    4.git remote add origin origin git@github.com:servicestream/img-retrieval-ad-hoc.git
-    4.git push -u origin master
+    1. git init
+    2. git status
+    3. git commit -m "first commit"
+    4. git remote add origin origin git@github.com:servicestream/img-retrieval-ad-hoc.git
+    4. git push -u origin master
 
 **Creating First Branch**
     1. git branch issue1
