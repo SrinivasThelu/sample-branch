@@ -11,28 +11,24 @@ Git learninging
 
 **Creating Branch**
 
-
-    1. git branch issue1
-      *create a branch in local repository
-
-    2. git checkout issue1
-        * checking out for making changes
-    3. git commit -m "issue commit"
-        *commit to local branch
-    4. git push -u master issue1
-        * create a remote branch and commit
+1. git branch issue1
+  * create a branch in local repository
+2. git checkout issue1
+  * checking out for making changes
+3. git commit -m "issue commit"
+  * commit to local branch
+4. git push -u master issue
+  * create a remote branch and commit
 
 **Merge Branch**
 
-
-    1. git checkout master
-    2. git merge issue1
-    3. git commit -m "merge"
-    4. git push
+1. git checkout master
+2. git merge issue1
+3. git commit -m "merge"
+4. git push
 
 **Cleaning up branch**
 
-
-    1. git remote origin --delete issue1
-        - git branch -d issue1
+1. git remote origin --delete issue1
+ - git branch -d issue1
 
