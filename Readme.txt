@@ -27,3 +27,6 @@ Changes to be committed:
     - create a branch in local repository
 -- git checkout issue1
     - checking out for making changes
+    
+git commit -m "issue commit"
+
