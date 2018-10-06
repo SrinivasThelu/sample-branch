@@ -13,9 +13,11 @@ Git learninging
 
 
     1. git branch issue1
-        *create a branch in local repository
+
+        * create a branch in local repository
+        
     2. git checkout issue1
-        *checking out for making changes
+        * checking out for making changes
     3. git commit -m "issue commit"
         *commit to local branch
     4. git push -u master issue1
