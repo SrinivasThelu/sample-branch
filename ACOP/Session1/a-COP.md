@@ -6,7 +6,7 @@ Town Planning vs solution architecture :
 
 
 |Component          | Town Planning |  Architecture |
---------------------------------------------------
+|-------------------|---------------| ------------- |
 |Vision             |               |               |            
 |Principals         |               |               |
 |Models             |               |               |
@@ -15,4 +15,7 @@ Town Planning vs solution architecture :
 |Standards          |               |               |
 |Mgmnt Process      |               |               |
 |TrnasitionInitiatve|               |               |
------------------------------------------------------
+
+
+
+
