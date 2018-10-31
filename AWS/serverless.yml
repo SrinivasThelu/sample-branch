@@ -1,0 +1,45 @@
+{
+  "service": "pickWord",  
+  "custom": {
+    "apiVersion": 1
+  },
+  "provider": {
+    "name": "aws",
+    "timeout": 300,
+    "stage": "dev",
+    "region": "ap-southeast-2",
+    "profile": "free-role"
+  },
+  "functions": {
+    "pickWord": {
+      "runtime": "nodejs8.10",
+      "handler": "randomWordGenerator/lambdas/pickWord/app.handler",
+      "package": {
+        "individually": true,
+        "include": [
+          "node_modules/**",
+          "lambdas/pickWord/app.js",
+          "lambdas/utils/**"
+        ],
+        "exclude" :[
+          "random-word-generator/**"
+        ]
+      },
+      "timeout": 300,
+      "events": [
+        {
+          "http": {
+            "path": "/pickWord/${self:custom.apiVersion}/random",
+            "method": "get",
+            "private": "false",
+            "cors":
+            {
+              "origin" : "*"
+            }
+          }
+        }
+      ] 
+    }
+  }
+}
+    

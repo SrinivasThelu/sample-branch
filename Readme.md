@@ -29,7 +29,7 @@ Git learninging
 3. git commit -m "merge"
 4. git push
 
-**Cleaning up branch**
+**Cleaning up branch**f
 
 
 1. git remote origin --delete issue1
